@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Inputs Demo</title>
+  </head>
+  <body>
+    <p>Do you prefer cats or dogs?</p>
+    <form>
+
+      <!-- Giving them the same name connects them -->
+      <!-- Value is what is being passed -->
+      <label for="dogs"> Dogs: </label>
+      <input id="dogs" type="radio" name="petChoice" value="DOGS">
+
+      <label for="cats"> Cats: </label>
+      <input id="cats" type="radio" name="petChoice" value="CATS">
+
+      <p>What's your current mood?</p>
+      <!-- Value is taken from option if not inputted-->
+      <select name="mood">
+        <option value="happy">:)</option>
+        <option value="neutral">:|</option>
+        <option value="sad">:(</option>
+        <option>abc</option>
+      </select>
+
+      <textarea name="paragraph" rows="10" col="50">
+
+      </textarea>
+
+      <!-- Last thing at a form which is button will submit -->
+      <button>Go!</button>
+    </form>
+    <!-- <input type="checkbox"> -->
+  </body>
+</html>

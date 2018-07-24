@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form Demo</title>
+  </head>
+  <body>
+    <!-- <input type="text">
+    <input type="password">
+    <input type="color">
+    <input type="radio"> -->
+    <h1> Login </h1>
+
+    <!-- Form is an block level element -->
+    <!-- Form has action where the form sends data to -->
+    <!-- Form had method what HTTP Method (get/post) -->
+    <!-- No action specified or method specified goes to same place and get request -->
+    <form>
+      <!-- name provides a query string. ? and separated by & -->
+      <label>
+        Username:
+        <input name="username" type = "text" placeholder = "username">
+      </label>
+
+      <label>
+        Password:
+        <input name="password" type = "password" placeholder = "password">
+      </label>
+      <!-- Two ways to create the submit button -->
+      <!-- <button> Submit </button> -->
+      <input type = "submit">
+    </form>
+
+    <!-- Alternative Syntax -->
+    <h1> Altenative Syntax for Form </h1>
+    <form>
+      <label for="username"> Email:</label>
+      <!-- required is a boolean attribute so just having it means true -->
+      <!-- email type will force validation on email -->
+      <input id="username" type = "email" placeholder = "email" required>
+
+      <label for="password"> Password: </label>
+      <input id="password" type = "password" placeholder = "password" required>
+
+      <input type = "submit">
+    </form>
+
+  </body>
+</html>
